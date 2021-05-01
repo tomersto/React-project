@@ -4,7 +4,7 @@ import ExpenseItem from './components/Expenses/ExpanseItem'
 import ExpenseList from './components/Expenses/ExpenseList'
 
 
-function App() {
+const App = () => {
   const expenseItems = [
     {
       title: 'Meat Night',
