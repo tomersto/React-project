@@ -29,9 +29,15 @@ const App = () => {
       date: new Date(2021, 3, 10)
     },
   ]
+
+  const addExpenseHandler = (Data) => {
+   const expenseData = {
+     ...Data,
+   }
+  }
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onAddExpense = {addExpenseHandler} />
      <ExpenseList  expenseItems={expenseItems}/>
     </div>
   );
